@@ -6,7 +6,7 @@ def image_boundaries_drselva(image_path):
     # Read the input image
     image = cv2.imread(image_path)
     if image is None:
-        print("Error: Unable to read the image. Please check the image path.")
+        print("Error: Please check the image path.")
         return None
 
     # Convert the image to grayscale
@@ -48,7 +48,7 @@ def combine_images(input_image, output_image):
 
 
 if __name__ == "__main__":
-    input_image_path = "C:/Users/somes/PycharmProjects/DIP/BoundariesExtractionInput.jpg"  # Replace with the actual path
+    input_image_path = "C:/Users/somes/PycharmProjects/DIP/BoundariesExtractionInput.jpg"
     images = image_boundaries_drselva(input_image_path)
 
     if images is not None:
@@ -60,7 +60,7 @@ if __name__ == "__main__":
         # Display the combined image
         cv2.imshow("Input and Output Side by Side", combined_image)
 
-        # Wait until a key is pressed and then close the windows
+
         cv2.waitKey(0)
         cv2.destroyAllWindows()
 
