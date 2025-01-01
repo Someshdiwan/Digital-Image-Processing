@@ -116,7 +116,8 @@ if __name__ == "__main__":
 
 
 # Spatial Domain Filters:
-# In digital image processing, **spatial domain filters** are techniques applied directly on the pixels of an image to achieve specific transformations or enhancements. These filters operate in the spatial domain, meaning they process the image by manipulating the pixel values at specific locations (spatial coordinates) based on their neighbors.
+# In digital image processing, **spatial domain filters** are techniques applied directly on the pixels of an image to achieve specific transformations or enhancements.
+# These filters operate in the spatial domain, meaning they process the image by manipulating the pixel values at specific locations (spatial coordinates) based on their neighbors.
 
 # Key Concepts
 
@@ -125,7 +126,6 @@ if __name__ == "__main__":
 # 2. Filtering in the Spatial Domain:
 #    - Involves applying a kernel (a small matrix, often called a mask or filter) to each pixel and its neighbors to compute a new value for the pixel.
 
-# ---
 
 # Types of Spatial Domain Filters
 # 1. Linear Filters:
