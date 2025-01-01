@@ -213,17 +213,4 @@ if __name__ == "__main__":
 #    - Advantages: Can recover fragmented edges and improve boundary continuity.
 #    - Disadvantages: Might lead to over- or under-segmentation if thresholds or parameters are not well-tuned.
 
-
-# Summary of Common Boundary Extraction Methods:
-#
-# | **Method**                | **Description**                                                                 | **Use Case**                                           |
-# |---------------------------|---------------------------------------------------------------------------------|-------------------------------------------------------|
-# | **Sobel Operator**         | Detects edges by computing gradient.                                            | Basic edge detection, primarily for sharp transitions. |
-# | **Canny Edge Detection**   | Multi-step method that includes smoothing and edge tracking.                     | High-accuracy edge detection, especially in noisy images. |
-# | **Watershed Algorithm**    | Treats the image as a topographic surface and finds watershed lines as boundaries. | Segmenting regions in complex images.                  |
-# | **Active Contours**        | Iteratively adjusts the boundary to match the image features.                    | Detecting smooth, complex object boundaries.          |
-# | **FindContours (OpenCV)**  | Detects contours in a binary image and marks boundaries.                         | Efficient extraction of object contours.               |
-# | **Hough Transform**        | Detects geometric shapes and lines by transforming the image space.             | Detecting simple geometric boundaries (e.g., circles, lines). |
-
-
 # ---
