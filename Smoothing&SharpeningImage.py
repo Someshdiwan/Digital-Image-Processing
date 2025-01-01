@@ -70,7 +70,7 @@ def smooth_image_selva(image, kernel_size=(5, 5)):
 
 if __name__ == "__main__":
     # Replace with the path to your image
-    input_image_path = "C:/Users/somes/PycharmProjects/DIP/Smoothing&SharpeningImageInput.png"  # e.g., 'C:/images/your_image.jpg'
+    input_image_path = "C:/Users/somes/PycharmProjects/DIP/Smoothing&SharpeningImageInput.png"
 
     # Read the input image
     image = cv2.imread(input_image_path)
