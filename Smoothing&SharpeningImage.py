@@ -121,7 +121,7 @@ if __name__ == "__main__":
 # Key Concepts
 
 # 1. Spatial Domain:
-#    - Refers to the pixel space where the image intensity values are represented as a function of spatial coordinates (e.g., \(f(x, y)\), where \(x\) and \(y\) are the pixel positions).
+#    - Refers to the pixel space where the image intensity values are represented as a function of spatial coordinates (e.g., (f(x, y)), where (x) and (y) are the pixel positions).
 # 2. Filtering in the Spatial Domain:
 #    - Involves applying a kernel (a small matrix, often called a mask or filter) to each pixel and its neighbors to compute a new value for the pixel.
 
