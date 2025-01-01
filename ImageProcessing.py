@@ -17,7 +17,7 @@ def invert_image(image):
     return inverted_image
 
 # Load the image
-image_path = "C:/Users/somes/PycharmProjects/DIP/Lion_waiting_in_Namibia.jpg"
+image_path = "/ImageProcessingInput.jpg"
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Apply contrast stretching (adjust low_percentile and high_percentile as needed)
