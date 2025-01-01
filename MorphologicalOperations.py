@@ -29,7 +29,7 @@ def perform_closing(image, kernel_size):
     return closed_image
 
 if __name__ == "__main__":
-    # Read an image (replace 'input_image.jpg' with your image path)
+    # Read an image
     image_path = "/MorphologicalInput.jpeg"
     original_image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
