@@ -48,13 +48,13 @@ plt.show()
 # image filtering techniques using low-pass and high-pass filters to highlight different aspects of an image.
 
 # What Are Low-Pass and High-Pass Filters?
-# Low-Pass Filters (Gaussian Filtering):
 
+# Low-Pass Filters (Gaussian Filtering):
 # Purpose: Smoothens the image by suppressing high-frequency components (e.g., noise, edges).
 # How It Works: Averages pixel values within a defined neighborhood using a Gaussian kernel.
 # Use Case: Noise reduction, blurring.
-# High-Pass Filters (Laplacian Filtering):
 
+# High-Pass Filters (Laplacian Filtering):
 # Purpose: Highlights edges and fine details by emphasizing high-frequency components.
 # How It Works: Computes the second derivative using the Laplacian operator to detect rapid intensity changes.
 # Use Case: Edge detection, enhancing details.
