@@ -180,4 +180,3 @@ if __name__ == "__main__":
 #    - Detecting edges, lines, and corners.
 # 3. Noise Removal:
 #    - Reducing unwanted noise while preserving essential details.
-
