@@ -39,7 +39,7 @@ You can try out the various techniques with your own images by running the sampl
 
 ## 🛠️ Technologies Used  
 
-- Python 3.x
+- Python 3.x  
 - OpenCV  
 - Pillow (PIL)  
 - NumPy  
@@ -55,3 +55,71 @@ Digital-Image-Processing/
 ├── ipynb/                   # Source code for image processing techniques
 ├── README.md                # Project documentation
 └── LICENSE                  # License information
+```
+
+### Prerequisites  
+
+Make sure you have the following dependencies installed:  
+- Python 3.x  
+- OpenCV  
+- Pillow  
+- NumPy  
+
+You can install them using pip:  
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### Running the Code  
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Someshdiwan/Digital-Image-Processing
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd digital-image-processing
+   ```
+3. Open any Jupyter notebook in the `notebooks` folder and run the code cells to see the image processing techniques in action.
+4. Add your own images to the `images/` folder to experiment with the techniques.
+
+---
+
+## 🖼️ Visual Examples  
+
+### Contrast Stretching  
+**Original Image**:  
+![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingInput.jpg)  
+
+**Processed Image**:  
+![Contrast Stretched Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingOutput.png)  
+
+### Brightness Adjustment  
+**Original Image**:  
+![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalOutput.png)  
+
+**Processed Image (Increased Brightness)**:  
+![Brightened Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalInput.jpeg)  
+
+### Image Inversion  
+**Original Image**:  
+![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/Smoothing%26SharpeningImageOutput.png)  
+
+**Inverted Image**:  
+![Inverted Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/Smoothing%26SharpeningImageOutput.png)  
+
+---
+
+## 🌟 Show Your Support  
+
+If you like this project, please consider giving it a ⭐ on GitHub!
+
+---
+
+## 🤝 Contributing  
+
+We welcome contributions to enhance the project further! If you’d like to add new techniques or improve the existing ones, feel free to fork the repository, make your changes, and submit a pull request.
+
+---
