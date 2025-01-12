@@ -38,12 +38,25 @@ You can try out the various techniques with your own images by running the sampl
 ---
 
 ## 🛠️ Technologies Used  
-
-- Python 3.x  
+- Python 3.x
 - OpenCV  
 - Pillow (PIL)  
 - NumPy  
-
+- Matplotlib (for visualizations)
+- SciPy (for advanced image processing functions)
+- scikit-image (image processing and computer vision algorithms)
+- TensorFlow / Keras (for machine learning-based image processing tasks)
+- PyTorch (for deep learning and neural network-based image processing)
+- Jupyter Notebooks (for interactive code and visualizations)
+- ImageMagick (for command-line image manipulation)
+- Pandas (for handling and analyzing data)
+- Numpy (for handling arrays and numerical data)
+- Seaborn (for advanced plotting)
+- Cython (for optimizing image processing algorithms)
+- OpenCV Contrib (extra OpenCV functionality for image processing)
+- SciKit-Image (for image segmentation and advanced processing tasks)
+- Tesseract (for Optical Character Recognition, if applicable)
+  
 ---
 
 ## 📂 Project Structure  
@@ -67,7 +80,7 @@ Make sure you have the following dependencies installed:
 
 You can install them using pip:  
 ```bash
-pip install -r requirements.txt
+pip install
 ```
 
 ---
@@ -121,5 +134,12 @@ If you like this project, please consider giving it a ⭐ on GitHub!
 ## 🤝 Contributing  
 
 We welcome contributions to enhance the project further! If you’d like to add new techniques or improve the existing ones, feel free to fork the repository, make your changes, and submit a pull request.
+
+---
+## 📧 Contact  
+
+For any questions or suggestions, feel free to reach out:  
+- **GitHub**: [Someshdiwan](https://github.com/Someshdiwan)  
+- **Email**: someshdiwan369@gmail.com
 
 ---
