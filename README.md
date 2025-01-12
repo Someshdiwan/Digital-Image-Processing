@@ -2,7 +2,7 @@
 
 A Python-based project that demonstrates various Digital Image Processing (DIP) techniques, including contrast stretching, brightness adjustment, and image inversion. This project includes sample code, outputs, and examples to help you learn and experiment with DIP concepts.
 
-[![GitHub License](https://img.shields.io/github/license/Someshdiwan/Digital-Image-Processing)](https://opensource.org/licenses/MIT)  
+![GitHub License](https://img.shields.io/github/license/Someshdiwan/https://github.com/Someshdiwan/Digital-Image-Processing) 
 ![GitHub stars](https://img.shields.io/github/stars/Someshdiwan/Digital-Image-Processing)  
 
 ---
@@ -126,7 +126,8 @@ We welcome contributions to enhance the project further! If you’d like to add 
 
 ## 📃 License  
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+![GitHub License](https://img.shields.io/github/license/Someshdiwan/https://github.com/Someshdiwan/Digital-Image-Processing) 
+
 
 ---
 
