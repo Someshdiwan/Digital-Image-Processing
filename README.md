@@ -55,7 +55,7 @@ You can try out the various techniques with your own images by running the sampl
 - Cython (for optimizing image processing algorithms)
 - OpenCV Contrib (extra OpenCV functionality for image processing)
 - SciKit-Image (for image segmentation and advanced processing tasks)
-- Tesseract (for Optical Character Recognition, if applicable)
+- Tesseract (for Optical Character Recognition)
   
 ---
 
