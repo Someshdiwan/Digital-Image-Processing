@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -106,6 +106,30 @@
         }
     </script>
 
+     <h2>📜 Project README</h2>
+    <div class="readme-container" id="readme-content">
+        <p>Loading README...</p>
+    </div>
+
+    <script>
+        async function loadReadme() {
+            const url = "https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/README.md";
+            try {
+                const response = await fetch(url);
+                const markdown = await response.text();
+                
+                const converter = new showdown.Converter();
+                const html = converter.makeHtml(markdown);
+
+                document.getElementById("readme-content").innerHTML = html;
+            } catch (error) {
+                document.getElementById("readme-content").innerHTML = "<p>Failed to load README.</p>";
+                console.error("Error loading README:", error);
+            }
+        }
+
+        loadReadme();
+    </script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -137,41 +161,3 @@
 </head>
 <body>
 
-    <h2>Image Gallery</h2>
-    <!-- Your existing gallery here -->
-
-    <h2>Video Gallery</h2>
-    <!-- Your existing video gallery here -->
-
-    <h2>📜 Project README</h2>
-    <div class="readme-container" id="readme-content">
-        <p>Loading README...</p>
-    </div>
-
-    <script>
-        async function loadReadme() {
-            const url = "https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/README.md";
-            try {
-                const response = await fetch(url);
-                const markdown = await response.text();
-                
-                const converter = new showdown.Converter();
-                const html = converter.makeHtml(markdown);
-
-                document.getElementById("readme-content").innerHTML = html;
-            } catch (error) {
-                document.getElementById("readme-content").innerHTML = "<p>Failed to load README.</p>";
-                console.error("Error loading README:", error);
-            }
-        }
-
-        loadReadme();
-    </script>
-
-</body>
-</html>
-
-
-</body>
-</html>
- -->
