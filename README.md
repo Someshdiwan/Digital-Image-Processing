@@ -17,7 +17,7 @@ Digital Image Processing (DIP) involves manipulating images to enhance their app
 
 These techniques are essential for applications like image enhancement, analysis, and feature extraction.
 
-![DIP Overview](https://file.io/UVggE9yDETz2)  
+![DIP Overview](https://i.imgur.com/yourgiflink.gif)
 
 ---
 
