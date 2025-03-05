@@ -1,275 +1,28 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Gallery</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        h2 {
-            color: #333;
-        }
-        .slider-container {
-            position: relative;
-            width: 90%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .slider {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 10px;
-            white-space: nowrap;
-            scrollbar-width: none;
-        }
-        .slider::-webkit-scrollbar {
-            display: none;
-        }
-        .slider img {
-            scroll-snap-align: center;
-            width: 400px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .nav-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .nav-buttons button {
-            padding: 10px;
-            margin: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-        }
-        .nav-buttons button:hover {
-            background-color: #0056b3;
-        }
-        .video-gallery {
-            margin-top: 30px;
-        }
-        video {
-            width: 90%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-    </style>
-</head>
-<body>
-
-    <h2>Image Gallery</h2>
-    <div class="slider-container">
-        <div class="slider" id="imageSlider">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image6.avif">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image7.avif">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image8.jpg">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image9.webp">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image10.webp">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image11.webp">
-            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image12.webp">
-        </div>
-        <div class="nav-buttons">
-            <button onclick="scrollSlider(-1)">⬅ Prev</button>
-            <button onclick="scrollSlider(1)">Next ➡</button>
-        </div>
-    </div>
-
-    <h2>Video Gallery</h2>
-    <div class="video-gallery">
-        <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/Video.mp4" controls autoplay muted loop></video>
-        <br>
-        <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/video2.mp4" controls autoplay muted loop></video>
-    </div>
-
-    <script>
-        function scrollSlider(direction) {
-            const slider = document.getElementById("imageSlider");
-            const scrollAmount = 400; // Adjust scroll distance per click
-            slider.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
-        }
-    </script>
-    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Gallery with README</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        h2 {
-            color: #333;
-        }
-        .readme-container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: left;
-        }
-    </style>
-</head>
-<body>
-
- -->
-
-<!--  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Optimized Media Gallery</title>
-  <style>
-  
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 20px;
-      background-color: #f4f4f4;
-    }
-    h2 {
-      color: #333;
-      margin-top: 30px;
-    }
-   
-    .slider-container {
-      position: relative;
-      width: 90%;
-      margin: auto;
-      overflow: hidden;
-    }
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 10px;
-      scroll-behavior: smooth;
-      scrollbar-width: none;
-    }
-    .slider::-webkit-scrollbar {
-      display: none; 
-    }
-    .slider img {
-      scroll-snap-align: center;
-      width: 400px;
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .nav-buttons {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .nav-buttons button {
-      padding: 10px 15px;
-      margin: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      border: none;
-      background-color: #007bff;
-      color: #fff;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .nav-buttons button:hover {
-      background-color: #0056b3;
-    }
-
-    .video-gallery {
-      margin-top: 30px;
-    }
-    .video-gallery video {
-      width: 90%;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .slider img {
-        width: 90%;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <h2>Image Gallery</h2>
-  <div class="slider-container">
-    <div class="slider" id="imageSlider">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg" alt="Image 1">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png" alt="Image 2">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png" alt="Image 3">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png" alt="Image 4">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png" alt="Image 5">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image6.avif" alt="Image 6">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image7.avif" alt="Image 7">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image8.jpg" alt="Image 8">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image9.webp" alt="Image 9">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image10.webp" alt="Image 10">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image11.webp" alt="Image 11">
-      <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image12.webp" alt="Image 12">
-    </div>
-    <div class="nav-buttons">
-      <button onclick="scrollSlider(-1)">&#x2B05; Prev</button>
-      <button onclick="scrollSlider(1)">Next &#x27A1;</button>
-    </div>
-  </div>
-
-  <h2>Video Gallery</h2>
-  <div class="video-gallery">
-    <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/Video.mp4" controls autoplay muted loop></video>
-    <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/video2.mp4" controls autoplay muted loop></video>
-  </div>
-
-  <script>
-    function scrollSlider(direction) {
-      const slider = document.getElementById("imageSlider");
-      const image = slider.querySelector("img");
-      const gap = 10; 
-      const scrollAmount = image.clientWidth + gap;
-      slider.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
-    }
-  </script>
-
-</body>
-</html>
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Enhanced Media Gallery</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Enhanced Media Gallery with image slider, video gallery, lightbox, dark mode toggle and more. Accessible, performance optimized and customizable." />
+  <meta name="keywords" content="Media Gallery, Image Slider, Video Gallery, Lightbox, Dark Mode, Accessibility, SEO, Responsive Design" />
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Enhanced Media Gallery" />
+  <meta property="og:description" content="Enjoy a media gallery experience with enhanced accessibility, performance optimizations, customization options and more." />
+  <meta property="og:image" content="https://example.com/default-image.jpg" />
+  <meta property="og:url" content="https://example.com/gallery" />
+  <meta property="og:type" content="website" />
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "ImageGallery",
+    "name": "Enhanced Media Gallery",
+    "description": "A media gallery featuring an image slider, video gallery, and lightbox with dark mode toggle and customizable settings.",
+    "url": "https://example.com/gallery"
+  }
+  </script>
   <style>
     /* Global Styles */
     body {
@@ -321,12 +74,50 @@
       background-color: #0056b3;
       outline: none;
     }
+    /* Settings Panel Styles */
+    #settingsPanel {
+      margin: 20px auto;
+      padding: 10px;
+      max-width: 400px;
+      background: #e9e9e9;
+      border-radius: 5px;
+      text-align: left;
+      display: none;
+    }
+    #settingsPanel label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    #settingsPanel input,
+    #settingsPanel select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    #settingsToggle {
+      margin: 10px;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: 2px solid #0056b3;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    #settingsToggle:hover,
+    #settingsToggle:focus {
+      background-color: #0056b3;
+      outline: none;
+    }
     /* Slider Styles */
     .slider-container {
       position: relative;
       width: 90%;
       margin: 20px auto;
       overflow: hidden;
+      /* Accessibility: Make slider focusable */
+      outline: none;
     }
     .slider {
       display: flex;
@@ -352,6 +143,10 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .slide img:hover {
+      transform: scale(1.02);
     }
     .slide figcaption {
       margin-top: 8px;
@@ -439,66 +234,86 @@
       .slide {
         width: 90%;
       }
+      header {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div id="datetime"></div>
-    <!-- The button now displays an icon -->
-    <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    <div id="datetime" tabindex="0"></div>
+    <div>
+      <!-- Dark Mode Toggle -->
+      <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <!-- Settings Toggle -->
+      <button id="settingsToggle" aria-label="Toggle settings panel">Settings</button>
+    </div>
   </header>
+  
+  <!-- Settings Panel for Customization Options -->
+  <div id="settingsPanel" aria-label="Customization Settings">
+    <label for="autoplayInterval">Auto-play Interval (ms):</label>
+    <input type="number" id="autoplayInterval" value="3000" min="1000" max="10000" step="500" />
+    
+    <label for="galleryLayout">Gallery Layout:</label>
+    <select id="galleryLayout">
+      <option value="slider" selected>Slider</option>
+      <option value="grid">Grid</option>
+    </select>
+  </div>
   
   <main>
     <h2>Image Gallery</h2>
-    <div class="slider-container" id="sliderContainer">
+    <!-- Slider Container with ARIA Role and Keyboard Navigation -->
+    <div class="slider-container" id="sliderContainer" role="region" aria-label="Image Gallery" tabindex="0">
       <div class="slider" id="imageSlider">
-        <!-- Each slide wrapped in a figure with caption -->
-        <figure class="slide">
+        <!-- Each slide wrapped in a figure with caption and accessible attributes -->
+        <figure class="slide" aria-label="Slide 1">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg" alt="Scenic view 1" loading="lazy" />
           <figcaption>Scenic view 1</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 2">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png" alt="Scenic view 2" loading="lazy" />
           <figcaption>Scenic view 2</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 3">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png" alt="Scenic view 3" loading="lazy" />
           <figcaption>Scenic view 3</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 4">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png" alt="Scenic view 4" loading="lazy" />
           <figcaption>Scenic view 4</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 5">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png" alt="Scenic view 5" loading="lazy" />
           <figcaption>Scenic view 5</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 6">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image6.avif" alt="Scenic view 6" loading="lazy" />
           <figcaption>Scenic view 6</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 7">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image7.avif" alt="Scenic view 7" loading="lazy" />
           <figcaption>Scenic view 7</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 8">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image8.jpg" alt="Scenic view 8" loading="lazy" />
           <figcaption>Scenic view 8</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 9">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image9.webp" alt="Scenic view 9" loading="lazy" />
           <figcaption>Scenic view 9</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 10">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image10.webp" alt="Scenic view 10" loading="lazy" />
           <figcaption>Scenic view 10</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 11">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image11.webp" alt="Scenic view 11" loading="lazy" />
           <figcaption>Scenic view 11</figcaption>
         </figure>
-        <figure class="slide">
+        <figure class="slide" aria-label="Slide 12">
           <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image12.webp" alt="Scenic view 12" loading="lazy" />
           <figcaption>Scenic view 12</figcaption>
         </figure>
@@ -512,8 +327,8 @@
 
     <h2>Video Gallery</h2>
     <div class="video-gallery">
-      <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/Video.mp4" controls autoplay muted loop preload="none"></video>
-      <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/video2.mp4" controls autoplay muted loop preload="none"></video>
+      <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/Video.mp4" controls autoplay muted loop preload="none" loading="lazy"></video>
+      <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/video2.mp4" controls autoplay muted loop preload="none" loading="lazy"></video>
     </div>
   </main>
 
@@ -521,14 +336,15 @@
   <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
     <span id="lightboxClose" class="close" aria-label="Close">&times;</span>
     <img id="lightboxImg" src="" alt="Expanded view" />
+    <!-- Fullscreen Toggle (Optional Enhancement) -->
+    <button id="fullscreenToggle" aria-label="Toggle Fullscreen" style="position:absolute; bottom:20px; right:30px; padding:10px; border:none; background:#007bff; color:#fff; border-radius:5px; cursor:pointer;">Fullscreen</button>
   </div>
 
   <script>
-    /* --- Date & Time Widget --- */
+    /* --- Date & Time Widget (IST) --- */
     function updateDateTime() {
       const dtElem = document.getElementById("datetime");
       const now = new Date();
-      // Convert to IST (UTC+5:30)
       const options = { 
         timeZone: "Asia/Kolkata", 
         hour12: true, 
@@ -560,17 +376,27 @@
       setTheme(darkMode);
     });
 
+    /* --- Settings Panel Toggle and Customization Options --- */
+    const settingsToggle = document.getElementById("settingsToggle");
+    const settingsPanel = document.getElementById("settingsPanel");
+    const autoplayInput = document.getElementById("autoplayInterval");
+    const galleryLayoutSelect = document.getElementById("galleryLayout");
+    settingsToggle.addEventListener("click", () => {
+      settingsPanel.style.display = settingsPanel.style.display === "block" ? "none" : "block";
+    });
+
     /* --- Slider Navigation & Auto-Play --- */
     const slider = document.getElementById("imageSlider");
     const indicatorsContainer = document.getElementById("sliderIndicators");
     const slides = document.querySelectorAll(".slide");
     let currentIndex = 0;
-    let autoPlayInterval;
+    let autoPlayInterval = parseInt(autoplayInput.value);
 
     // Create dot indicators for each slide
     slides.forEach((_, index) => {
       const dot = document.createElement("span");
       dot.classList.add("indicator");
+      dot.setAttribute("aria-label", "Go to slide " + (index + 1));
       dot.addEventListener("click", () => {
         currentIndex = index;
         updateSliderPosition();
@@ -580,9 +406,8 @@
     const indicators = document.querySelectorAll(".indicator");
 
     function updateSliderPosition() {
-      // Calculate the scroll amount based on the first slide's width and gap
       const slideWidth = slides[0].clientWidth;
-      const gap = 10; // must match CSS gap
+      const gap = 10; // match CSS gap
       slider.scrollTo({ left: currentIndex * (slideWidth + gap), behavior: "smooth" });
       updateIndicators();
     }
@@ -598,50 +423,107 @@
       updateSliderPosition();
     }
 
-    // Auto-play slider every 3 seconds
+    // Auto-play slider function
+    let autoPlayTimer;
     function startAutoPlay() {
-      autoPlayInterval = setInterval(() => {
+      autoPlayTimer = setInterval(() => {
         currentIndex = (currentIndex + 1) % slides.length;
         updateSliderPosition();
-      }, 3000);
+      }, autoPlayInterval);
     }
     function stopAutoPlay() {
-      clearInterval(autoPlayInterval);
+      clearInterval(autoPlayTimer);
     }
     slider.addEventListener("mouseover", stopAutoPlay);
-    slider.addEventListener("mouseout", startAutoPlay);
+    slider.addEventListener("mouseout", () => {
+      autoPlayInterval = parseInt(autoplayInput.value);
+      startAutoPlay();
+    });
     startAutoPlay();
+
+    // Update auto-play interval when input changes
+    autoplayInput.addEventListener("change", () => {
+      stopAutoPlay();
+      autoPlayInterval = parseInt(autoplayInput.value);
+      startAutoPlay();
+    });
+
+    /* --- Keyboard Navigation for Slider --- */
+    const sliderContainer = document.getElementById("sliderContainer");
+    sliderContainer.addEventListener("keydown", (e) => {
+      if(e.key === "ArrowRight") {
+        scrollSlider(1);
+      } else if(e.key === "ArrowLeft") {
+        scrollSlider(-1);
+      }
+    });
 
     /* --- Lightbox Functionality --- */
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightboxImg");
     const lightboxClose = document.getElementById("lightboxClose");
 
-    // Open lightbox when an image is clicked
     slides.forEach(slide => {
       const img = slide.querySelector("img");
       img.addEventListener("click", () => {
         lightboxImg.src = img.src;
         lightbox.style.display = "flex";
+        // Set focus on close button for accessibility
+        lightboxClose.focus();
       });
     });
 
-    // Close lightbox when close button is clicked
     lightboxClose.addEventListener("click", () => {
       lightbox.style.display = "none";
     });
 
-    // Close lightbox when clicking outside the image
     lightbox.addEventListener("click", (e) => {
       if (e.target === lightbox) {
         lightbox.style.display = "none";
       }
     });
 
-    // Close lightbox on ESC key press
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && lightbox.style.display === "flex") {
         lightbox.style.display = "none";
+      }
+    });
+
+    /* --- Fullscreen Toggle for Lightbox --- */
+    const fullscreenToggle = document.getElementById("fullscreenToggle");
+    fullscreenToggle.addEventListener("click", () => {
+      if (!document.fullscreenElement) {
+        lightbox.requestFullscreen().catch(err => {
+          console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    });
+
+    /* --- Gallery Layout Customization --- */
+    const mainGallery = document.querySelector("main");
+    galleryLayoutSelect.addEventListener("change", () => {
+      if (galleryLayoutSelect.value === "grid") {
+        document.getElementById("sliderContainer").style.display = "none";
+        // Create grid view for images (for demonstration purposes)
+        let gridContainer = document.createElement("div");
+        gridContainer.id = "gridContainer";
+        gridContainer.style.display = "grid";
+        gridContainer.style.gridTemplateColumns = "repeat(auto-fill, minmax(200px, 1fr))";
+        gridContainer.style.gap = "10px";
+        slides.forEach(slide => {
+          let gridItem = slide.cloneNode(true);
+          gridContainer.appendChild(gridItem);
+        });
+        mainGallery.insertBefore(gridContainer, document.querySelector("h2:nth-of-type(1)"));
+      } else {
+        // Revert to slider view
+        let gridContainer = document.getElementById("gridContainer");
+        if (gridContainer) {
+          gridContainer.remove();
+        }
+        document.getElementById("sliderContainer").style.display = "block";
       }
     });
   </script>
