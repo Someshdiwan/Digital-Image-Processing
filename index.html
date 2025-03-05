@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!-- <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -138,7 +138,7 @@
 
  -->
 
- <!DOCTYPE html>
+<!--  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -260,5 +260,367 @@
     }
   </script>
 
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Media Gallery</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: #f4f4f4;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    h2 {
+      color: #333;
+      margin-top: 30px;
+    }
+    /* Dark Mode Styles */
+    body.dark {
+      background-color: #333;
+      color: #f4f4f4;
+    }
+    body.dark .nav-buttons button {
+      background-color: #555;
+    }
+    body.dark .nav-buttons button:hover,
+    body.dark .nav-buttons button:focus {
+      background-color: #777;
+    }
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    #datetime {
+      font-size: 0.9rem;
+    }
+    #themeToggle {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    #themeToggle:hover,
+    #themeToggle:focus {
+      background-color: #0056b3;
+      outline: none;
+    }
+    /* Slider Styles */
+    .slider-container {
+      position: relative;
+      width: 90%;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      scroll-behavior: smooth;
+      scrollbar-width: none; /* Firefox */
+    }
+    .slider::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+    .slide {
+      scroll-snap-align: center;
+      flex: 0 0 auto;
+      width: 400px;
+      max-width: 100%;
+      position: relative;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    .slide figcaption {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    /* Navigation Buttons */
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .nav-buttons button {
+      padding: 10px 15px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons button:hover,
+    .nav-buttons button:focus {
+      background-color: #0056b3;
+      outline: 2px solid #0056b3;
+    }
+    /* Indicator Dots */
+    .indicators {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .indicator {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+      background-color: #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .indicator.active {
+      background-color: #007bff;
+    }
+    /* Video Gallery Styles */
+    .video-gallery {
+      margin-top: 30px;
+    }
+    .video-gallery video {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+    /* Lightbox Styles */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+    .lightbox .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: #fff;
+      cursor: pointer;
+    }
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
+      .slide {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="datetime"></div>
+    <button id="themeToggle" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+  </header>
+  
+  <main>
+    <h2>Image Gallery</h2>
+    <div class="slider-container" id="sliderContainer">
+      <div class="slider" id="imageSlider">
+        <!-- Each slide wrapped in a figure with caption -->
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg" alt="Scenic view 1" loading="lazy" />
+          <figcaption>Scenic view 1</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png" alt="Scenic view 2" loading="lazy" />
+          <figcaption>Scenic view 2</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png" alt="Scenic view 3" loading="lazy" />
+          <figcaption>Scenic view 3</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png" alt="Scenic view 4" loading="lazy" />
+          <figcaption>Scenic view 4</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png" alt="Scenic view 5" loading="lazy" />
+          <figcaption>Scenic view 5</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image6.avif" alt="Scenic view 6" loading="lazy" />
+          <figcaption>Scenic view 6</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image7.avif" alt="Scenic view 7" loading="lazy" />
+          <figcaption>Scenic view 7</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image8.jpg" alt="Scenic view 8" loading="lazy" />
+          <figcaption>Scenic view 8</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image9.webp" alt="Scenic view 9" loading="lazy" />
+          <figcaption>Scenic view 9</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image10.webp" alt="Scenic view 10" loading="lazy" />
+          <figcaption>Scenic view 10</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image11.webp" alt="Scenic view 11" loading="lazy" />
+          <figcaption>Scenic view 11</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image12.webp" alt="Scenic view 12" loading="lazy" />
+          <figcaption>Scenic view 12</figcaption>
+        </figure>
+      </div>
+      <nav class="nav-buttons" aria-label="Image Slider Navigation">
+        <button onclick="scrollSlider(-1)" aria-label="Previous slide">&#x2B05; Prev</button>
+        <button onclick="scrollSlider(1)" aria-label="Next slide">Next &#x27A1;</button>
+      </nav>
+      <div class="indicators" id="sliderIndicators"></div>
+    </div>
+
+    <h2>Video Gallery</h2>
+    <div class="video-gallery">
+      <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/Video.mp4" controls autoplay muted loop preload="none"></video>
+      <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/video2.mp4" controls autoplay muted loop preload="none"></video>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <span id="lightboxClose" class="close" aria-label="Close">&times;</span>
+    <img id="lightboxImg" src="" alt="Expanded view" />
+  </div>
+
+  <script>
+    /* --- Date & Time Widget --- */
+    function updateDateTime() {
+      const dtElem = document.getElementById("datetime");
+      const now = new Date();
+      dtElem.textContent = now.toLocaleString();
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+
+    /* --- Theme Toggle --- */
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+
+    /* --- Slider Navigation & Auto-Play --- */
+    const slider = document.getElementById("imageSlider");
+    const indicatorsContainer = document.getElementById("sliderIndicators");
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+    let autoPlayInterval;
+
+    // Create dot indicators for each slide
+    slides.forEach((_, index) => {
+      const dot = document.createElement("span");
+      dot.classList.add("indicator");
+      dot.addEventListener("click", () => {
+        currentIndex = index;
+        updateSliderPosition();
+      });
+      indicatorsContainer.appendChild(dot);
+    });
+    const indicators = document.querySelectorAll(".indicator");
+
+    function updateSliderPosition() {
+      // Calculate the scroll amount based on the first slide's width and gap
+      const slideWidth = slides[0].clientWidth;
+      const gap = 10; // must match CSS gap
+      slider.scrollTo({ left: currentIndex * (slideWidth + gap), behavior: "smooth" });
+      updateIndicators();
+    }
+
+    function updateIndicators() {
+      indicators.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentIndex);
+      });
+    }
+
+    function scrollSlider(direction) {
+      currentIndex = Math.max(0, Math.min(slides.length - 1, currentIndex + direction));
+      updateSliderPosition();
+    }
+
+    // Auto-play slider every 3 seconds
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSliderPosition();
+      }, 3000);
+    }
+    function stopAutoPlay() {
+      clearInterval(autoPlayInterval);
+    }
+    slider.addEventListener("mouseover", stopAutoPlay);
+    slider.addEventListener("mouseout", startAutoPlay);
+    startAutoPlay();
+
+    /* --- Lightbox Functionality --- */
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    // Open lightbox when an image is clicked
+    slides.forEach(slide => {
+      const img = slide.querySelector("img");
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    // Close lightbox when close button is clicked
+    lightboxClose.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+
+    // Close lightbox on ESC key press
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.style.display === "flex") {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
 </body>
 </html>
