@@ -341,24 +341,30 @@
   </div>
 
   <script>
-    /* --- Date & Time Widget (IST) --- */
-    function updateDateTime() {
-      const dtElem = document.getElementById("datetime");
-      const now = new Date();
-      const options = { 
-        timeZone: "Asia/Kolkata", 
-        hour12: true, 
-        year: "numeric", 
-        month: "long", 
-        day: "numeric", 
-        hour: "2-digit", 
-        minute: "2-digit", 
-        second: "2-digit" 
-      };
-      dtElem.textContent = now.toLocaleString("en-IN", options);
-    }
-    setInterval(updateDateTime, 1000);
-    updateDateTime();
+function updateDateTime() {
+  const dtElem = document.getElementById("datetime");
+  const now = new Date();
+  
+  // Convert current time to UTC, then add 330 minutes (5 hours 30 minutes)
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const istTime = new Date(utc + (330 * 60000)); // 330 minutes = 5.5 hours
+  
+  // Format the IST time using toLocaleString
+  const options = {
+    hour12: true,
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit"
+  };
+
+  dtElem.textContent = istTime.toLocaleString("en-IN", options) + " - Mumbai ICT (UTC+5:30)";
+}
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
 
     /* --- Theme Toggle --- */
     const themeToggle = document.getElementById("themeToggle");
