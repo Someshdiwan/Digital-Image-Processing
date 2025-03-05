@@ -21,20 +21,13 @@ These techniques are essential for applications like image enhancement, analysis
 
 Here are some images demonstrating the results of various processing techniques:
 
-<p align="center">
+<div style="display: flex; overflow-x: auto; white-space: nowrap; gap: 10px;">
   <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg" width="300">
   <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png" width="300">
   <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png" width="300">
   <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png" width="300">
   <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image6.avif" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image7.avif" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image8.jpg" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image9.webp" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image10.webp" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image11.webp" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image12.webp" width="300">
-</p>
+</div>
 
 ---
 
