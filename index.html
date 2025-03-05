@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -106,5 +106,72 @@
         }
     </script>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery with README</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        .readme-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+    <!-- Your existing gallery here -->
+
+    <h2>Video Gallery</h2>
+    <!-- Your existing video gallery here -->
+
+    <h2>📜 Project README</h2>
+    <div class="readme-container" id="readme-content">
+        <p>Loading README...</p>
+    </div>
+
+    <script>
+        async function loadReadme() {
+            const url = "https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/README.md";
+            try {
+                const response = await fetch(url);
+                const markdown = await response.text();
+                
+                const converter = new showdown.Converter();
+                const html = converter.makeHtml(markdown);
+
+                document.getElementById("readme-content").innerHTML = html;
+            } catch (error) {
+                document.getElementById("readme-content").innerHTML = "<p>Failed to load README.</p>";
+                console.error("Error loading README:", error);
+            }
+        }
+
+        loadReadme();
+    </script>
+
 </body>
 </html>
+
+
+</body>
+</html>
+ -->
