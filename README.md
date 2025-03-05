@@ -17,7 +17,24 @@ Digital Image Processing (DIP) involves manipulating images to enhance their app
 
 These techniques are essential for applications like image enhancement, analysis, and feature extraction.
 
-![DIP Overview](https://i.imgur.com/yourgiflink.gif)
+## 🖼️ Image Gallery  
+
+Here are some images demonstrating the results of various processing techniques:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image6.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image7.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image8.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image9.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image10.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image11.png" width="300">
+  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image12.png" width="300">
+</p>
 
 ---
 
@@ -31,13 +48,8 @@ These techniques are essential for applications like image enhancement, analysis
 
 ---
 
-## 🌐 Demo  
-
-You can try out the various techniques with your own images by running the sample code provided in the `notebooks` directory.
-
----
-
 ## 🛠️ Technologies Used  
+
 - Python 3.x
 - OpenCV  
 - Pillow (PIL)  
@@ -45,18 +57,8 @@ You can try out the various techniques with your own images by running the sampl
 - Matplotlib (for visualizations)
 - SciPy (for advanced image processing functions)
 - scikit-image (image processing and computer vision algorithms)
-- TensorFlow / Keras (for machine learning-based image processing tasks)
-- PyTorch (for deep learning and neural network-based image processing)
 - Jupyter Notebooks (for interactive code and visualizations)
-- ImageMagick (for command-line image manipulation)
-- Pandas (for handling and analyzing data)
-- Numpy (for handling arrays and numerical data)
-- Seaborn (for advanced plotting)
-- Cython (for optimizing image processing algorithms)
-- OpenCV Contrib (extra OpenCV functionality for image processing)
-- SciKit-Image (for image segmentation and advanced processing tasks)
-- Tesseract (for Optical Character Recognition)
-  
+
 ---
 
 ## 📂 Project Structure  
@@ -65,7 +67,6 @@ You can try out the various techniques with your own images by running the sampl
 Digital-Image-Processing/
 ├── images/                  # Sample images
 ├── notebooks/               # Jupyter notebooks for code and visualizations
-├── ipynb/                   # Source code for image processing techniques
 ├── README.md                # Project documentation
 └── LICENSE                  # License information
 ```
@@ -80,7 +81,7 @@ Make sure you have the following dependencies installed:
 
 You can install them using pip:  
 ```bash
-pip install
+pip install opencv-python pillow numpy matplotlib
 ```
 
 ---
@@ -103,25 +104,21 @@ pip install
 ## 🖼️ Visual Examples  
 
 ### Contrast Stretching  
-**Original Image**:  
-![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingInput.jpg)  
-
-**Processed Image**:  
-![Contrast Stretched Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingOutput.png)  
+<p align="center">
+  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingInput.jpg" width="300">
+  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingOutput.png" width="300">
+</p>
 
 ### Brightness Adjustment  
-**Original Image**:  
-![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalOutput.png)  
-
-**Processed Image (Increased Brightness)**:  
-![Brightened Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalInput.jpeg)  
+<p align="center">
+  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalOutput.png" width="300">
+  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalInput.jpeg" width="300">
+</p>
 
 ### Image Inversion  
-**Original Image**:  
-![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/Smoothing%26SharpeningImageOutput.png)  
-
-**Inverted Image**:  
-![Inverted Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/Smoothing%26SharpeningImageOutput.png)  
+<p align="center">
+  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/Smoothing%26SharpeningImageOutput.png" width="300">
+</p>
 
 ---
 
@@ -136,10 +133,11 @@ If you like this project, please consider giving it a ⭐ on GitHub!
 We welcome contributions to enhance the project further! If you’d like to add new techniques or improve the existing ones, feel free to fork the repository, make your changes, and submit a pull request.
 
 ---
+
 ## 📧 Contact  
 
 For any questions or suggestions, feel free to reach out:  
 - **GitHub**: [Someshdiwan](https://github.com/Someshdiwan)  
-- **Email**: someshdiwan369@gmail.com
+- **Email**: someshdiwan369@gmail.com  
 
 ---
