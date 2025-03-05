@@ -1,4 +1,4 @@
-<!-- <!-- <!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -264,7 +264,7 @@
 </html>
  -->
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -305,15 +305,16 @@
     #datetime {
       font-size: 0.9rem;
     }
+    /* Updated Dark Mode Toggle Button */
     #themeToggle {
       padding: 8px 12px;
       font-size: 0.9rem;
       cursor: pointer;
-      border: none;
+      border: 2px solid #0056b3; /* Edge border */
       background-color: #007bff;
       color: #fff;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
     }
     #themeToggle:hover,
     #themeToggle:focus {
@@ -444,7 +445,8 @@
 <body>
   <header>
     <div id="datetime"></div>
-    <button id="themeToggle" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+    <!-- The button now displays an icon -->
+    <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
   </header>
   
   <main>
@@ -526,15 +528,36 @@
     function updateDateTime() {
       const dtElem = document.getElementById("datetime");
       const now = new Date();
-      dtElem.textContent = now.toLocaleString();
+      // Convert to IST (UTC+5:30)
+      const options = { 
+        timeZone: "Asia/Kolkata", 
+        hour12: true, 
+        year: "numeric", 
+        month: "long", 
+        day: "numeric", 
+        hour: "2-digit", 
+        minute: "2-digit", 
+        second: "2-digit" 
+      };
+      dtElem.textContent = now.toLocaleString("en-IN", options);
     }
     setInterval(updateDateTime, 1000);
     updateDateTime();
 
     /* --- Theme Toggle --- */
     const themeToggle = document.getElementById("themeToggle");
+    function setTheme(darkMode) {
+      if(darkMode) {
+        document.body.classList.add("dark");
+        themeToggle.innerHTML = "🌞";
+      } else {
+        document.body.classList.remove("dark");
+        themeToggle.innerHTML = "🌙";
+      }
+    }
     themeToggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
+      const darkMode = !document.body.classList.contains("dark");
+      setTheme(darkMode);
     });
 
     /* --- Slider Navigation & Auto-Play --- */
