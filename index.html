@@ -3,31 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+    <title>Media Gallery</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        .slider-container {
+            position: relative;
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
         .slider {
             display: flex;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
-            width: 100%;
             gap: 10px;
             white-space: nowrap;
+            scrollbar-width: none;
+        }
+        .slider::-webkit-scrollbar {
+            display: none;
         }
         .slider img {
             scroll-snap-align: center;
-            width: 300px;
+            width: 400px;
             height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .nav-buttons button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        .nav-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .video-gallery {
+            margin-top: 30px;
+        }
+        video {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
+
     <h2>Image Gallery</h2>
-    <div class="slider">
-        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg">
-        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png">
-        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png">
-        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png">
-        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png">
+    <div class="slider-container">
+        <div class="slider" id="imageSlider">
+             <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg" width="300">
+             <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png" width="300">
+             <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png" width="300">
+            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png" width="300">
+            <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png" width="300">
+            <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image6.avif" width="300">
+            <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image7.avif" width="300">
+            <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image8.jpg" width="300">
+            <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image9.webp" width="300">
+            <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image10.webp" width="300">
+            <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image11.webp" width="300">
+            <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/DIP%20Overview/image12.webp" width="300">
+        </div>
+        <div class="nav-buttons">
+            <button onclick="scrollSlider(-1)">⬅ Prev</button>
+            <button onclick="scrollSlider(1)">Next ➡</button>
+        </div>
     </div>
+
+    <h2>Video Gallery</h2>
+    <div class="video-gallery">
+        <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/Video.mp4" controls autoplay muted></video>
+        <br>
+        <video src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/video2.mp4" controls autoplay muted></video>
+    </div>
+
+    <script>
+        function scrollSlider(direction) {
+            const slider = document.getElementById("imageSlider");
+            const scrollAmount = 400; // Adjust scroll distance per click
+            slider.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
+        }
+    </script>
+
 </body>
 </html>
