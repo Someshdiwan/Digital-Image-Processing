@@ -145,7 +145,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Optimized Media Gallery</title>
   <style>
-    /* Global Styles */
+  
     body {
       font-family: Arial, sans-serif;
       text-align: center;
@@ -156,7 +156,7 @@
       color: #333;
       margin-top: 30px;
     }
-    /* Slider Styles */
+   
     .slider-container {
       position: relative;
       width: 90%;
@@ -169,10 +169,10 @@
       scroll-snap-type: x mandatory;
       gap: 10px;
       scroll-behavior: smooth;
-      scrollbar-width: none; /* Firefox */
+      scrollbar-width: none;
     }
     .slider::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
+      display: none; 
     }
     .slider img {
       scroll-snap-align: center;
@@ -201,7 +201,7 @@
     .nav-buttons button:hover {
       background-color: #0056b3;
     }
-    /* Video Gallery Styles */
+
     .video-gallery {
       margin-top: 30px;
     }
@@ -212,7 +212,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       margin-bottom: 20px;
     }
-    /* Responsive Media Queries */
+
     @media (max-width: 768px) {
       .slider img {
         width: 90%;
@@ -254,7 +254,7 @@
     function scrollSlider(direction) {
       const slider = document.getElementById("imageSlider");
       const image = slider.querySelector("img");
-      const gap = 10; // Same gap as defined in CSS
+      const gap = 10; 
       const scrollAmount = image.clientWidth + gap;
       slider.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
     }
