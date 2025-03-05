@@ -105,32 +105,7 @@
             slider.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
         }
     </script>
-
-     <h2>📜 Project README</h2>
-    <div class="readme-container" id="readme-content">
-        <p>Loading README...</p>
-    </div>
-
-    <script>
-        async function loadReadme() {
-            const url = "https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/README.md";
-            try {
-                const response = await fetch(url);
-                const markdown = await response.text();
-                
-                const converter = new showdown.Converter();
-                const html = converter.makeHtml(markdown);
-
-                document.getElementById("readme-content").innerHTML = html;
-            } catch (error) {
-                document.getElementById("readme-content").innerHTML = "<p>Failed to load README.</p>";
-                console.error("Error loading README:", error);
-            }
-        }
-
-        loadReadme();
-    </script>
-
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
