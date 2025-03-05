@@ -19,17 +19,10 @@ These techniques are essential for applications like image enhancement, analysis
 
 ## 🖼️ Image Gallery  
 
-Here are some images demonstrating the results of various processing techniques:
-
-<div style="display: flex; overflow-x: auto; white-space: nowrap; gap: 10px;">
-  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg" width="300">
-  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png" width="300">
-  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png" width="300">
-  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png" width="300">
-  <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png" width="300">
-</div>
+🔗 [View Interactive Image Slider](https://Someshdiwan.github.io/Digital-Image-Processing/)
 
 ---
+
 
 ## 🔧 Features  
 
@@ -41,8 +34,8 @@ Here are some images demonstrating the results of various processing techniques:
 
 ---
 
-## 🛠️ Technologies Used  
 
+## 🛠️ Technologies Used  
 - Python 3.x
 - OpenCV  
 - Pillow (PIL)  
@@ -50,9 +43,20 @@ Here are some images demonstrating the results of various processing techniques:
 - Matplotlib (for visualizations)
 - SciPy (for advanced image processing functions)
 - scikit-image (image processing and computer vision algorithms)
+- TensorFlow / Keras (for machine learning-based image processing tasks)
+- PyTorch (for deep learning and neural network-based image processing)
 - Jupyter Notebooks (for interactive code and visualizations)
-
+- ImageMagick (for command-line image manipulation)
+- Pandas (for handling and analyzing data)
+- Numpy (for handling arrays and numerical data)
+- Seaborn (for advanced plotting)
+- Cython (for optimizing image processing algorithms)
+- OpenCV Contrib (extra OpenCV functionality for image processing)
+- SciKit-Image (for image segmentation and advanced processing tasks)
+- Tesseract (for Optical Character Recognition)
+  
 ---
+
 
 ## 📂 Project Structure  
 
@@ -94,24 +98,29 @@ pip install opencv-python pillow numpy matplotlib
 
 ---
 
+
 ## 🖼️ Visual Examples  
 
 ### Contrast Stretching  
-<p align="center">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingInput.jpg" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingOutput.png" width="300">
-</p>
+**Original Image**:  
+![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingInput.jpg)  
+
+**Processed Image**:  
+![Contrast Stretched Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/ImageProcessingOutput.png)  
 
 ### Brightness Adjustment  
-<p align="center">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalOutput.png" width="300">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalInput.jpeg" width="300">
-</p>
+**Original Image**:  
+![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalOutput.png)  
+
+**Processed Image (Increased Brightness)**:  
+![Brightened Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/MorphologicalInput.jpeg)  
 
 ### Image Inversion  
-<p align="center">
-  <img src="https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/Smoothing%26SharpeningImageOutput.png" width="300">
-</p>
+**Original Image**:  
+![Original Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/Smoothing%26SharpeningImageOutput.png)  
+
+**Inverted Image**:  
+![Inverted Image](https://github.com/Someshdiwan/Digital-Image-Processing/blob/master/Smoothing%26SharpeningImageOutput.png)  
 
 ---
 
