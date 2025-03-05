@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            width: 100%;
+            gap: 10px;
+            white-space: nowrap;
+        }
+        .slider img {
+            scroll-snap-align: center;
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Gallery</h2>
+    <div class="slider">
+        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image.jpg">
+        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image2.png">
+        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image3.png">
+        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image4.png">
+        <img src="https://raw.githubusercontent.com/Someshdiwan/Digital-Image-Processing/master/DIP%20Overview/image5.png">
+    </div>
+</body>
+</html>
